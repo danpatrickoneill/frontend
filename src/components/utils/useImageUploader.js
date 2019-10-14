@@ -12,6 +12,8 @@ const useImageUploader = type => {
     const [banner, setBanner] = useState()
     const [modalOpen, setModal] = useState(false)
 
+
+    //Uploads the image when it is dropped into the box. Sets out cloudinary api key, the file, a timestamp and our current preset to the image.
     const onDrop = useCallback(acceptedFiles => {
         const timestamp = Date.now() / 1000;
         let formData = new FormData();
@@ -29,6 +31,8 @@ const useImageUploader = type => {
         uploadImage()
     }, [type])
 
+
+    //Holds the styling for the image upload modal. Import this to any form and you'll have the same stylnig as every other form.
     const UploaderUI = props => {
         const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop })
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import replies from "../../assets/replies.png";
 import LockIcon from "@material-ui/icons/Lock";
 
+//This component shows a blurred screen for a private group if you are not a member.
 const BlockedView = props => {
   return (
     <BlockedContainer>

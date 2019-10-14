@@ -27,7 +27,6 @@ const NearbyGroups = () => {
 						column: "location",
 						row: loggedInUser.location
 					});
-					console.log("NearbyGroups data", groups.data);
 
 					// Get array of ids for groups the user already is a member of
 					const loggedInIDs = loggedInGroups.map(group => group.id);

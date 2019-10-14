@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Card, CardActionArea, CardContent, Avatar, Typography, Tooltip } from "@material-ui/core"
 import ThumbUpOutlinedIcon from "@material-ui/icons/ThumbUpOutlined";
 
+//Material-UI style hook. Check out the Material UI docs for more info.
 const useStyles = makeStyles({
 	card: {
 		width: "90%",
@@ -57,12 +58,14 @@ const LikeFeedCard = props => {
 		acronym
 	} = props.activity;
 
+	//Clicking the group section of the feed card links you to the group instead of the post.
 	const goToGroup = e => {
 		e.preventDefault();
 		e.stopPropagation();
 		props.history.push(`/group/${group_id}`)
 	}
 
+	//Click anywhere else on the feed card and it will link you to the feed item.
 	const goToPost = e => {
 		e.stopPropagation();
 		props.history.push({
@@ -121,6 +124,7 @@ const LikeFeedCard = props => {
 	);
 };
 
+//Styled Components
 const LikeCardDiv = styled.div`
 	display: flex;
 	justify-content: center;

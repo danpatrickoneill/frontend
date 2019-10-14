@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Paper, Grow, FormControlLabel, Avatar, Typography } from "@material-ui/core/";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 
+//Material-UI style hook. Check out the Material UI docs for more info.
 const useStyles = makeStyles(theme => ({
 	root: {
 		height: 40

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Message } from "semantic-ui-react"
 
+//All form functions and buttons are available in this custom hook. Simply import as seen in EditProfile.
 
 const useForm = callback => {
 	const [values, setValues] = useState({});

@@ -1,5 +1,7 @@
 import mixpanel from 'mixpanel-browser';
 
+//This file sets up a set of functions for mixpanel analytics. On login, a user's info is set. To log anything that isn't already logged, import { Mixpanel } from this file and then use the activity to function to log whatever you would like. Check out EditProfile, CreateGroup or PostForm for some examples.
+
 mixpanel.init("0a656753e6651e53814b19a9ad2bc9c5");
 
 //let env_check = process.env.NODE_ENV === 'development';
